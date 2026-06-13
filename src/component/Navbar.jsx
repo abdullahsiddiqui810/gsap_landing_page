@@ -27,7 +27,7 @@ import gsap from 'gsap';
         <div>
             <a href="#" className="flex items-center gap-2">
                 <img src="/images/logo.png" alt="logo" />
-                <p>GSAP</p>
+                <p>Cocktails</p>
             </a>
             <ul>
                 {navLinks.map((link) => (
