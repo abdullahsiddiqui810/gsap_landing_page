@@ -2,11 +2,10 @@ import React from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
-export default function About() {
-  const About = () => {
-    useGSAP(() => {
-      const titleSplit = SplitText.create("#about h2", { type: "words" });
-    });
+
+const About = () => {
+  useGSAP(() => {
+    const titleSplit = SplitText.create("#about h2", { type: "words" });
 
     const scrollTimeline = gsap.timeline({
       scrollTrigger: {
@@ -27,7 +26,7 @@ export default function About() {
         { opacity: 0, duration: 1.5, ease: "power1.inOut", stagger: 0.04 },
         "-=0.5",
       );
-  };
+  });
 
   return (
     <div id="about">
@@ -35,7 +34,10 @@ export default function About() {
         <div className="content">
           <div className="md:col-span-8">
             <p className="badge">Best Cocktails</p>
-            <h2 className="title">Where every drink tells a story</h2>
+            <h2 className="title">
+              Where every detail matters <span className="text-white">-</span>
+              from muddle to garnish
+            </h2>
           </div>
           <div className="sub-content">
             <p>
@@ -50,8 +52,8 @@ export default function About() {
                 <span>4.5</span>/5
               </p>
             </div>
+            <p className="text-sm text-white-100">More than +12000 customers</p>
           </div>
-          <p className="text-sm text-white-100">More than +12000 customers</p>
         </div>
       </div>
       <div className="top-grid">
@@ -59,20 +61,24 @@ export default function About() {
           <div className="noisy" />
           <img src="/images/abt1.png" alt="grid-img-1" />
         </div>
+
         <div className="md:col-span-6">
           <div className="noisy" />
           <img src="/images/abt2.png" alt="grid-img-1" />
         </div>
+
         <div className="md:col-span-3">
           <div className="noisy" />
           <img src="/images/abt5.png" alt="grid-img-1" />
         </div>
       </div>
+
       <div className="bottom-grid">
         <div className="md:col-span-8">
           <div className="noisy" />
           <img src="/images/abt3.png" alt="grid-img-1" />
         </div>
+
         <div className="md:col-span-4">
           <div className="noisy" />
           <img src="/images/abt4.png" alt="grid-img-1" />
@@ -80,4 +86,5 @@ export default function About() {
       </div>
     </div>
   );
-}
+};
+export default About;

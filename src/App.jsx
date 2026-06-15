@@ -7,6 +7,7 @@ import Navbar from './component/Navbar';
 import Hero from './component/Hero';
 import Cocktail from './component/Cocktail';
 import About from './component/About';
+import Art from './component/Art';
  
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Hero />
       <Cocktail />
       <About />
+      <Art/>
     </main>
   )
 }
