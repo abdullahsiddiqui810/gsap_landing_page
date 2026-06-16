@@ -8,6 +8,8 @@ import Hero from './component/Hero';
 import Cocktail from './component/Cocktail';
 import About from './component/About';
 import Art from './component/Art';
+import Menu from './component/Menu';
+import Contact from './component/Contact';
  
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
       <Cocktail />
       <About />
       <Art/>
+      <Menu/>
+      <Contact />
     </main>
   )
 }
